@@ -10,15 +10,15 @@
 
     | Week | Date  | Topic | Lecturers | Type |
     |------|-------|-------|-----------|------|
-    | 01 | Jan 15 | [Review of statistics](https://drive.google.com/open?id=1okjYVeDQZ4-lqliY7qD9rmBg7Tbc1kwE) [Spike Trains](https://drive.google.com/open?id=1hFg6F79iodNyaPuKxqNTf8cVlbY9X_z-)| [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
+    | 01 | Jan 15 | Introduction to statistics | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 01 | Jan 16 | [The t-test and randomization tests](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/01_tTestAndRandomizationTests/introAndHipothesisTests.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | 02 | Jan 22 | [LFPs](https://drive.google.com/open?id=1qi1rdHUP3atLSMbcVeOfJkmJdV7jRyuD) [Spectral analysis](https://drive.google.com/open?id=1RV8X-vJ-Zpiv867_5D6TpbzcP-Ob9IlB)| [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
+    | 02 | Jan 22 | Spectral analysis of stationary signals | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 02 | Jan 23 | [Power spectra](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/02_LFPs_spectralAnalysis/spectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | 03 | Jan 29 | [Spectrogram and non-stationary signals](https://drive.google.com/open?id=1j0m136j8Gks9L2vzja33S675KLShnN3P) [Multiple time series](https://drive.google.com/open?id=10drGN8gBTX86u7jkW55b4BE7i8g6nmN_) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
+    | 03 | Jan 29 | Spectral analysis of non-stationary signals | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 03 | Jan 30 | [Spectrogram and coherence](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/03_spectralAnalysisForNonStationarySignals/nonStationarySpectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | 04 | Feb 05 | [Circular statistics and local likelihood](https://drive.google.com/open?id=1_fkUwIpcu-s8D8D_DL53_MRuDQjI9RDa) [The bootstrap](https://drive.google.com/open?id=1GrL--CypH_Bjr5MuVXSda8r_CzfQdLCA) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
+    | 04 | Feb 05 | Circular statistics, the bootstrap | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 04 | Feb 06 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | 05 | Feb 12 | [Singular Value Decomposition](https://drive.google.com/open?id=10dBiM36EMYxg5m0EqhnArj3KUk3AIElT) [Dimensionality reduction](https://drive.google.com/open?id=1sVtWgqx4yylPJrlIB3DdeluzQRhU2GDi) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
+    | 05 | Feb 12 | Dimensionality reduction | [Will Dorrell](https://www.williamdorrell.co.uk/) | lecture |
     | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | [Will Dorrell](https://www.williamdorrell.co.uk/)| practical |
     | 06 | Feb 19 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
     | 06 | Feb 20 | Linear Regression | [Lior Fox](https://liorfox.github.io/) | practical |
