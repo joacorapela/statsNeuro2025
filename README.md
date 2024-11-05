@@ -24,6 +24,13 @@
         <td>lecture</td>
     </tr>
     <tr>
+        <td>01</td>
+        <td>Jan 16</td>
+        <td><a href="https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/01_tTestAndRandomizationTests/introAndHipothesisTests.pdf">The t-test and randomization test</a></td>
+        <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
+        <td>practical</td>
+    </tr>
+    <tr>
         <td bgcolor="blue" colspan="5">This content spans five columns</td>
     </tr>
     </table>
