@@ -12,7 +12,6 @@
     |------|-------|-------|-----------|------|
     | 01 | Jan 15 | Intro to stats, hypothesis testing | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 01 | Jan 16 | [The t-test and randomization test](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/01_tTestAndRandomizationTests/introAndHipothesisTests.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | Spectral Analysis |
     | 02 | Jan 22 | Spectral analysis of stationary signals | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 02 | Jan 23 | [Power spectra](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/02_LFPs_spectralAnalysis/spectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
     | 03 | Jan 29 | Spectral analysis of non-stationary signals, multiple time series | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
