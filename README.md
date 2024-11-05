@@ -17,6 +17,13 @@
         <th>Type</th>
     </tr>
     <tr>
+        <td>01</td>
+        <td>Jan 15</td>
+        <td>Intro to stats, hypothesis testing</td>
+        <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
+        <td>lecture</td>
+    </tr>
+    <tr>
         <td colspan="5">This content spans five columns</td>
     </tr>
     </table>
