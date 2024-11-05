@@ -31,7 +31,7 @@
     | 10 | Mar 19 | [Reinforcement learning](lectures/10_reinforcementLearning/RLinTheBrain_SWC_2024.pdf) | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | lecture |
     | 10 | Mar 20 | Reinforcement learning | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | practical |
     | 11 | Mar 26 | [Experimental control with Bonsai and real-time ML](https://neurogears.org/neuroinformatics-2024/) | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) | lecture |
-    | 11 | Mar 27 | Experimental Control with Bonsai and real-time ML | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
+    | 11 | Mar 27 | Experimental Control with Bonsai and real-time ML | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) | practical |
 
 - running scripts: we recommend that you run the provided scripts in a conda environment. Before running any script do (only once):
 
