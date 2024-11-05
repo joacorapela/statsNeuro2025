@@ -24,7 +24,7 @@
         <td>lecture</td>
     </tr>
     <tr>
-        <td colspan="5">This content spans five columns</td>
+        <td bgcolor="lightblue" colspan="5">This content spans five columns</td>
     </tr>
     </table>
 
