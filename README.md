@@ -8,6 +8,19 @@
 
 - <a name="lecturesSchedule"></a>lectures schedule:
 
+    <table>
+    <tr>
+        <th>Week</th>
+        <th>Date</th>
+        <th>Topic</th>
+        <th>Lecturers</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td colspan="5">This content spans five columns</td>
+    </tr>
+    </table>
+
     | Week | Date  | Topic | Lecturers | Type |
     |------|-------|-------|-----------|------|
     | 01 | Jan 15 | Intro to stats, hypothesis testing | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
