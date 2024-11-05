@@ -33,8 +33,8 @@
     | 09 | Mar 13 | Artificial Neural Networks | [Erin Grant](https://eringrant.github.io/) | practical |
     | 10 | Mar 19 | [Reinforcement learning](lectures/10_reinforcementLearning/RLinTheBrain_SWC_2024.pdf) | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | lecture |
     | 10 | Mar 20 | Reinforcement learning | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | practical |
-    | 11 | Mar 26 | [Experimental Control with Bonsai](https://neurogears.org/neuroinformatics-2024/) | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) | lecture |
     | Experimental Control & Real-Time ML |
+    | 11 | Mar 26 | [Experimental Control with Bonsai](https://neurogears.org/neuroinformatics-2024/) | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) | lecture |
     | 11 | Mar 27 | Experimental Control with Bonsai | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
 
 - running scripts: we recommend that you run the provided scripts in a conda environment. Before running any script do (only once):
