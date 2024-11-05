@@ -22,8 +22,8 @@
     | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | [Will Dorrell](https://www.williamdorrell.co.uk/)| practical |
     | 06 | Feb 19 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
     | 06 | Feb 20 | Linear Regression | [Lior Fox](https://liorfox.github.io/) | practical |
-    | 07 | Feb 26 | [Linear Dynamical Systems](lectures/07_linearDynamicalSystems) | [Aniruddh Galgali](https://www.linkedin.com/in/anirgalgali/) | lecture |
-    | 07 | Feb 27 | [Linear Dynamical Systems](practicals/06_linearDynamicalSystems/README.md) | [Aniruddh Galgali](https://www.linkedin.com/in/anirgalgali/) [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
+    | 07 | Feb 26 | Linear Dynamical Systems | | lecture |
+    | 07 | Feb 27 | Linear Dynamical Systems | | practical |
     | 08 | Mar 05 | [Artificial Neural Networks](https://slides.com/eringrant/2024-03-07-swc-neural-nets-lecture/fullscreen?token=Gq60IrMy) | [Erin Grant](https://eringrant.github.io/) | lecture |
     | 08 | Mar 06 | Artificial Neural Networks | [Erin Grant](https://eringrant.github.io/) | practical |
     | 09 | Mar 12 | [Reinforcement learning](lectures/10_reinforcementLearning/RLinTheBrain_SWC_2024.pdf) | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | lecture |
