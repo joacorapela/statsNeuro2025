@@ -26,12 +26,74 @@
     <tr>
         <td>01</td>
         <td>Jan 16</td>
-        <td><a href="https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/01_tTestAndRandomizationTests/introAndHipothesisTests.pdf">The t-test and randomization test</a></td>
+        <td><a href="https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/01_tTestAndRandomizationTests/introAndHipothesisTests.pdf">The t-test and randomization tests</a></td>
         <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
         <td>practical</td>
     </tr>
     <tr>
-        <td bgcolor="blue" colspan="5">This content spans five columns</td>
+        <td bgcolor="blue" colspan="5">Spectral analysis</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Jan 22</td>
+        <td>Spectral analysis of stationary signals</td>
+        <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
+        <td>lecture</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Jan 23</td>
+        <td><a href="https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/02_LFPs_spectralAnalysis/spectralAnalysis.pdf">Power sectra</a></td>
+        <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
+        <td>practical</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>Jan 29</td>
+        <td>Spectral analysis of non-stationary signals, multiple time series</td>
+        <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
+        <td>lecture</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>Jan 30</td>
+        <td><a href="https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/03_spectralAnalysisForNonStationarySignals/nonStationarySpectralAnalysis.pdf">Spectrogram and coherence</a></td>
+        <td><a href="https://www.gatsby.ucl.ac.uk/">Joaquin Rapela</a></td>
+        <td>practical</td>
+    </tr>
+    <tr>
+        <td bgcolor="blue" colspan="5">Unsupervised learning</td>
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>Feb 05</td>
+        <td>Dimensionality reduction</td>
+        <td><a href="https://www.williamdorrell.co.uk/">Will Dorrell</a></td>
+        <td>lecture</td>
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>Feb 06</td>
+        <td>Dimensionality reduction</td>
+        <td><a href="https://www.williamdorrell.co.uk/">Will Dorrell</a></td>
+        <td>practical</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>Feb 12</td>
+        <td>Clustering</td>
+        <td></td>
+        <td>lecture</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>Feb 13</td>
+        <td>Clustering</td>
+        <td></td>
+        <td>practical</td>
+    </tr>
+    <tr>
+        <td bgcolor="blue" colspan="5">Supervised learning</td>
     </tr>
     </table>
 
