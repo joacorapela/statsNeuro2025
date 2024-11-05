@@ -20,18 +20,18 @@
     | 04 | Feb 06 | Dimensionality Reduction | [Will Dorrell](https://www.williamdorrell.co.uk/)| practical |
     | 05 | Feb 12 | Clustering | | lecture |
     | 05 | Feb 13 | Clustering | | practical |
-    | 06 | Feb 19 | Linear Dynamical Systems, Hidden Markov Models | | lecture |
-    | 06 | Feb 20 | [Linear Dynamical Systems](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/06_linearDynamicalSystems/README.md) | | practical |
-    | 07 | Feb 26 | Spike Sorting | | lecture |
+    | 06 | Feb 19 | Linear dynamical systems, hidden Markov models | | lecture |
+    | 06 | Feb 20 | [Linear dynamical systems](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/06_linearDynamicalSystems/README.md) | | practical |
+    | 07 | Feb 26 | Spike sorting | | lecture |
     | 07 | Feb 27 | Spike sorting | | practical |
-    | 08 | Feb 05 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
-    | 08 | Feb 06 | Linear Regression | [Lior Fox](https://liorfox.github.io/) | practical |
-    | 09 | Mar 12 | [Artificial Neural Networks](https://slides.com/eringrant/2024-03-07-swc-neural-nets-lecture/fullscreen?token=Gq60IrMy) | [Erin Grant](https://eringrant.github.io/) | lecture |
-    | 09 | Mar 13 | Artificial Neural Networks | [Erin Grant](https://eringrant.github.io/) | practical |
+    | 08 | Feb 05 | [Linear regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
+    | 08 | Feb 06 | Linear regression | [Lior Fox](https://liorfox.github.io/) | practical |
+    | 09 | Mar 12 | [Artificial neural networks](https://slides.com/eringrant/2024-03-07-swc-neural-nets-lecture/fullscreen?token=Gq60IrMy) | [Erin Grant](https://eringrant.github.io/) | lecture |
+    | 09 | Mar 13 | Artificial neural networks | [Erin Grant](https://eringrant.github.io/) | practical |
     | 10 | Mar 19 | [Reinforcement learning](lectures/10_reinforcementLearning/RLinTheBrain_SWC_2024.pdf) | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | lecture |
     | 10 | Mar 20 | Reinforcement learning | [Jesse Geerts](https://scholar.google.com/citations?user=4xusDVAAAAAJ&hl=en) | practical |
-    | 11 | Mar 26 | [Experimental Control with Bonsai](https://neurogears.org/neuroinformatics-2024/) | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) | lecture |
-    | 11 | Mar 27 | Experimental Control with Bonsai | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
+    | 11 | Mar 26 | [Experimental control with Bonsai and real-time ML](https://neurogears.org/neuroinformatics-2024/) | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) | lecture |
+    | 11 | Mar 27 | Experimental Control with Bonsai and real-time ML | [Goncalo Lopez](https://neurogears.org/about-us/) [Nick Guilbeault](https://www.linkedin.com/in/ncguilbeault/) [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
 
 - running scripts: we recommend that you run the provided scripts in a conda environment. Before running any script do (only once):
 
