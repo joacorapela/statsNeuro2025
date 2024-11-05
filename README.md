@@ -16,8 +16,8 @@
     | 02 | Jan 23 | [Power spectra](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/02_LFPs_spectralAnalysis/spectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
     | 03 | Jan 29 | Spectral analysis of non-stationary signals | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
     | 03 | Jan 30 | [Spectrogram and coherence](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/03_spectralAnalysisForNonStationarySignals/nonStationarySpectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | 04 | Feb 05 | Circular statistics, the bootstrap | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/) | lecture |
-    | 04 | Feb 06 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
+    | 04 | Feb 05 | Circular statistics, the bootstrap | | lecture |
+    | 04 | Feb 06 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | | practical |
     | 05 | Feb 12 | Dimensionality reduction | [Will Dorrell](https://www.williamdorrell.co.uk/) | lecture |
     | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | [Will Dorrell](https://www.williamdorrell.co.uk/)| practical |
     | 06 | Feb 19 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
