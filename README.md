@@ -19,7 +19,7 @@
     | 04 | Feb 05 | [Circular statistics and local likelihood](https://drive.google.com/open?id=1_fkUwIpcu-s8D8D_DL53_MRuDQjI9RDa) [The bootstrap](https://drive.google.com/open?id=1GrL--CypH_Bjr5MuVXSda8r_CzfQdLCA) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
     | 04 | Feb 06 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | | practical |
     | 05 | Feb 12 | [Singular Value Decomposition](https://drive.google.com/open?id=10dBiM36EMYxg5m0EqhnArj3KUk3AIElT) [Dimensionality reduction](https://drive.google.com/open?id=1sVtWgqx4yylPJrlIB3DdeluzQRhU2GDi) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
-    | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | [Will Dorrell](https://www.williamdorrell.co.uk/)| practical |
+    | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | | practical |
     | 06 | Feb 19 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
     | 06 | Feb 20 | Linear Regression | [Lior Fox](https://liorfox.github.io/) | practical |
     | 07 | Feb 26 | [Linear Dynamical Systems](lectures/07_linearDynamicalSystems) | | lecture |
