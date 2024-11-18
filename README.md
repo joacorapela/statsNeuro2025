@@ -18,11 +18,11 @@
     | 03 | Jan 30 | [Spectrogram and coherence](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/03_spectralAnalysisForNonStationarySignals/nonStationarySpectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
     | 04 | Feb 05 | [Circular statistics and local likelihood](https://drive.google.com/open?id=1_fkUwIpcu-s8D8D_DL53_MRuDQjI9RDa) [The bootstrap](https://drive.google.com/open?id=1GrL--CypH_Bjr5MuVXSda8r_CzfQdLCA) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
     | 04 | Feb 06 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | | practical |
-    | 05 | Feb 12 | [Singular Value Decomposition](https://drive.google.com/open?id=10dBiM36EMYxg5m0EqhnArj3KUk3AIElT) [Dimensionality reduction](https://drive.google.com/open?id=1sVtWgqx4yylPJrlIB3DdeluzQRhU2GDi) | [Ken Harris](https://www.ucl.ac.uk/biosciences/people/harris-kenneth) | lecture |
+    | 05 | Feb 12 | [Singular Value Decomposition](https://drive.google.com/open?id=10dBiM36EMYxg5m0EqhnArj3KUk3AIElT) [Dimensionality reduction](https://drive.google.com/open?id=1sVtWgqx4yylPJrlIB3DdeluzQRhU2GDi) | | lecture |
     | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | | practical |
     | 06 | Feb 19 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
     | 06 | Feb 20 | Linear Regression | [Lior Fox](https://liorfox.github.io/) | practical |
-    | 07 | Feb 26 | [Linear Dynamical Systems](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/07_linearDynamicalSystems) | | lecture |
+    | 07 | Feb 26 | [Linear Dynamical Systems](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/07_linearDynamicalSystems) | [Kris Jensen](https://krisjensen.github.io/)| lecture |
     | 07 | Feb 27 | [Linear Dynamical Systems](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/06_linearDynamicalSystems/README.md) | | practical |
     | 08 | Mar 05 | [Artificial Neural Networks](https://slides.com/eringrant/2024-03-07-swc-neural-nets-lecture/fullscreen?token=Gq60IrMy) | [Erin Grant](https://eringrant.github.io/) | lecture |
     | 08 | Mar 06 | Artificial Neural Networks | [Erin Grant](https://eringrant.github.io/) | practical |
