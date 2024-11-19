@@ -16,10 +16,10 @@
     | 02 | Jan 23 | [Power spectra](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/02_LFPs_spectralAnalysis/spectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
     | 03 | Jan 29 | Spectrogram and non-stationary signals, Multiple time series | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | lecture |
     | 03 | Jan 30 | [Spectrogram and coherence](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/03_spectralAnalysisForNonStationarySignals/nonStationarySpectralAnalysis.pdf) | [Joaquin Rapela](https://www.gatsby.ucl.ac.uk/~rapela) | practical |
-    | 04 | Feb 05 | Circular statistics, The bootstrap | | lecture |
-    | 04 | Feb 06 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | | practical |
-    | 05 | Feb 12 | Dimensionality reduction | [Sina Tootonian](https://www.linkedin.com/in/sina-tootoonian-99668838/) | lecture |
-    | 05 | Feb 13 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | [Sina Tootonian](https://www.linkedin.com/in/sina-tootoonian-99668838/) | practical |
+    | 05 | Feb 05 | Dimensionality reduction | [Sina Tootonian](https://www.linkedin.com/in/sina-tootoonian-99668838/) | lecture |
+    | 05 | Feb 06 | [Singular Value Decomposition](practicals/05_singularValueDecomposition/singularValueDecomposition.pdf) | [Sina Tootonian](https://www.linkedin.com/in/sina-tootoonian-99668838/) | practical |
+    | 04 | Feb 12 | Circular statistics, The bootstrap | | lecture |
+    | 04 | Feb 13 | [Circular statistics](https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/04_circulaVariables_bootstrap) | | practical |
     | 06 | Feb 19 | [Linear Regression](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/06_linearRegression/swc_neuroinformatics_linreg.pdf) | [Lior Fox](https://liorfox.github.io/) | lecture |
     | 06 | Feb 20 | Linear Regression | [Lior Fox](https://liorfox.github.io/) | practical |
     | 07 | Feb 26 | [Linear Dynamical Systems](https://github.com/joacorapela/neuroinformatics24/blob/master/lectures/07_linearDynamicalSystems) | [Kris Jensen](https://krisjensen.github.io/)| lecture |
