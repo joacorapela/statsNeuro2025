@@ -35,11 +35,11 @@
 
 - running scripts: we recommend that you run the provided scripts in a conda environment. Before running any script do (only once):
 
-    1. `conda create -n neuroi python`
+    1. `conda create -n statsNeuro python`
     2. clone this repository (`git clone git@github.com:joacorapela/statsNeuro2025.git`)
 
     3. change to the repository directory (`cd statsNeuro2025`)
-    4. activate your conda environment (`conda activate neuroi`)
+    4. activate your conda environment (`conda activate statsNeuro`)
     5. type `pip install -r requirements.txt`
 
     Then you can run any script by (for example):
