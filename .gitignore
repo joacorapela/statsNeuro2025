@@ -9,8 +9,6 @@
 *.bak
 *.bbl
 *.blg
-checkSpelling*
-*.dic
 .nfs*
 
 __pycache__/
