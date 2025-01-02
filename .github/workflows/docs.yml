@@ -1,0 +1,24 @@
+﻿name: docs
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - name: Install dependencies
+        run: |
+          pip install -e .
+          pip install -r requirements.txt
+          pip install -r docs/sphinx/requirements.txt
+      - name: Sphinx build
+        run: |
+          sphinx-build docs/sphinx/source/ docs/sphinx/build/
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/sphinx/build/
+          force_orphan: true
