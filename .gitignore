@@ -14,13 +14,15 @@ checkSpelling*
 .nfs*
 
 __pycache__/
-kensLectures/
 figures/
 videos/
 old/
-practicals/02_LFPs_spectralAnalysis/notes/
 data/
 results/
 notes/
 sounds/
 mySolution/
+docs/sphinx/
+docs/sphinx/source/*
+!docs/sphinx/source/conf.py
+!docs/sphinx/source/index.rst
