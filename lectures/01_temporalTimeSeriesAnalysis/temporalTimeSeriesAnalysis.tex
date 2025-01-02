@@ -1,0 +1,1062 @@
+
+\documentclass{beamer}
+
+\hypersetup{colorlinks=true}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+% remove title and author from left panel
+%  \makeatletter
+%   \setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
+%   {
+%     \beamer@tempdim=\beamer@sidebarwidth%
+%     \advance\beamer@tempdim by -6pt%
+%     \insertverticalnavigation{\beamer@sidebarwidth}%
+%     \vfill
+%     \ifx\beamer@sidebarside\beamer@lefttext%
+%     \else%
+%       \usebeamercolor{normal text}%
+%       \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+%       \vskip2pt%
+%     \fi%
+%   }%
+% \makeatother
+% done remove title and author from left panel 
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{natbib}
+\usepackage{apalike}
+\usepackage{comment}
+% \usepackage{enumitem}
+% \setlist[itemize]{topsep=0pt,before=\leavevmode\vspace{-1.5em}}
+% \setlist[description]{style=nextline}
+\usepackage{amsthm}
+\usepackage{media9}
+% \usepackage{multimedia}
+\usepackage{caption}
+\usepackage{subcaption}
+% \usepackage{hyperref}
+
+% \usepackage{tikz}
+% \tikzset{
+%      arrow/.style={-{Stealth[]}}
+%      }
+% \usetikzlibrary{positioning,arrows.meta}
+% \usetikzlibrary{shapes.geometric}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+\setbeamertemplate{caption}[numbered]%allow figure numbers
+
+\usepackage{setspace}
+
+% \newtheorem{example}{Example}
+% \setbeamertemplate{theorems}[numbered]
+
+\newenvironment<>{example1}[1][Example 1]{%
+  \setbeamercolor{block title}{fg=white,bg=cyan!75!black}%
+  \begin{block}{#1}}{\end{block}}
+\newenvironment<>{example2}[1][Example 2]{%
+  \setbeamercolor{block title}{fg=white,bg=magenta!75!black}%
+  \begin{block}{#1}}{\end{block}}
+
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+\newcommand{\keepi}{\addtocounter{saveenumi}{-1}\setcounter{enumi}{\value{saveenumi}}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{Temporal Time Series Analysis}
+
+\author{Joaqu\'{i}n Rapela} % Your name
+\institute[Gatsby Unit, UCL] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Gatsby Computational Neuroscience Unit\\University College London % Your institution for the title page
+}
+\date{\today} % Date, can be changed to a custom date
+
+\AtBeginSection[]
+  {
+     \begin{frame}<beamer>
+     \frametitle{Contents}
+         \tableofcontents[currentsection,hideallsubsections]
+     \end{frame}
+  }
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Contents} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+\section{Course notes}
+
+\begin{frame}
+    \frametitle{Background}
+
+    \begin{itemize}
+        \item Last Spring 2023 I helped in the discussion sessions of this
+            course.
+
+        \item Suggested to Klara Olofsdotter (SWC PhD program coordinator) and Sonja Hofer (SWC PhD program faculty coordinator) to ask SWC PhD students to take this course. They liked the idea.
+
+        \item I volunteered to lead discussions and do grading with Gatsby Unit
+            PhD students and postdoctoral scholars.
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{A few motivations to run this course}
+
+    \begin{enumerate}
+        \item Gain more teaching experience.
+        \item Provide SWC PhD students with essential neural data-analysis tools.
+        \item Contribute to better interactions between the SWC and the Gatsby Unit.
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Course structure}
+
+    \tiny
+    \begin{center}
+        \begin{tabular} { | l | l | l | l | l | }\hline
+            Week 01 & Jan 11 & The t-test and randomisation tests & Joaquin Rapela &  tutorial \\\hline
+            Week 02 & Jan 18 & Power spectra & Joaquin Rapela & tutorial \\
+                    &        &               & Yousef Mohammadi & \\
+                    &        &               & Joe Zimminski & \\\hline
+            Week 03 & Jan 25 & Spectrograms  & Joaquin Rapela & tutorial \\
+                    &        & and coherence & Yousef Mohammadi & \\
+                    &        &               & Joe Zimminski & \\\hline
+            Week 04 & Feb 01 & Circular statistics & Joaquin Rapela & tutorial \\\hline
+            Week 05 & Feb 08 & Singular value decomposition & Will Dorrell & tutorial \\\hline\hline
+            Week 06 & Feb 15 & Linear regression & Lior Fox & lecture\\
+                    & Feb 16 &                   &          & tutorial\\\hline
+            Week 07 & Feb 22 & Linear dynamical systems & Aniruddh Galgali & lecture \\
+                    &        &                          & Joaquin Rapela & \\
+                    & Feb 23 &                          &                  & tutorial\\\hline
+            Week 08 & Feb 29 & no class (CoSyNe)        &                  & \\\hline
+            Week 09 & Mar 07 & Artificial neural networks & Erin Grant & lecture\\
+                    & Mar 08 &                            &            & tutorial\\\hline
+            Week 10 & Mar 14 & Experimental control with Bonsai & Goncalo Lopes & lecture\\
+                    &        &                                  & Joaquin Rapela & \\
+                    & Mar 15 &                                  & & tutorial\\\hline
+            Week 11 & Mar 21 & Reinforcement learning           & & lecture\\
+                    & Mar 22 &                                  & & tutorial\\\hline
+            Week 12 & Mar 28 & Project development & & \\
+            Week 15 & Apr 25 &                     & & \\\hline 
+            Week 16 & May 02 & Project presentations & & \\\hline
+        \end{tabular}
+    \end {center}
+    Teaching assistants: Kira Dusterwald, Sihao (Daniel) Liu
+    \normalsize
+
+
+
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Graded worksheets}
+
+    Every Thursday we will assign you a worksheet that is due on the second
+    Monday after the assignment.
+
+\end{frame}
+
+\section{Time series analysis}
+
+\subsection{Introduction to time series analysis}
+
+\begin{frame}
+    \frametitle{What is time series analysis?}
+
+    \begin{itemize}
+
+        \item Time series analysis characterizes \textbf{data that is correlated in
+            time}.
+
+        \item These correlations serverly \textbf{restrict the applicability of
+            conventional technniques} assuming data samples that are
+            independent and identically distributed.
+
+        \item These correlations allow to \textbf{forecast} future values of a
+            time series based on present and past values.
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Relevance of time series analysis}
+
+    \begin{description}
+
+        \item[economics] daily stock market quotations, monthly unemployment
+            figures.
+
+        \item[social scientists] birthrates, school enrollment.
+
+        \item[epidemology] number of influenza cases observed over some time
+            period.
+
+        \item[medicine] blood pressure measurements traced over time.
+
+    \end{description}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Temporal vs spectral time series analysis}
+
+    \begin{description}
+
+        \item[termporal time series analysis] focuses on the analysis of lagged
+            relationship (e.g., how does what happened today affect what will
+            happen tomorrow?).
+
+        \item[spectral time series analysis] centers on the analysis of rhythms
+            (e.g., can we observe rhythmic activity in local field potentials
+            recorded from human brains?)
+
+    \end{description}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{An example time series}
+
+    In the examples below we will use spontaneous EEG (i.e., no task) recorded
+    from a human subject \citep{liuEtAl24}.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Generation of time series}
+
+    \begin{description}
+
+        \item[generate white noise] the first step to generate time series is
+            to generate \textbf{white noise} (i.e., independent Gaussian random
+            variables with zero mean and fixed variance).
+
+            \begin{lstlisting}
+                white_noise = np.random.normal(loc=0, scale=sigma, size=N)
+            \end{lstlisting}
+
+            \href{}{Example}
+
+            \hreff{}{\includegraphics[width=2in]{../../examples/01_temporalTimeSeriesAnalysis/figures/whiteNoise.png}}
+
+        \item[moving average models]
+
+            \begin{align*}
+                \nu_t = \frac{1}{3}(w_{t-1} + w_t + w_{t+1})
+            \end{align*}
+
+        \item[autoregressive models]
+
+            \begin{align*}
+                x_t = x_{t-1} - 0.9 x_{t-2} + w_t
+            \end{align*}
+
+        \item[random walk with drift]
+
+            \begin{align*}
+                x_t = \delta + x_{t-1} + w_t
+            \end{align*}
+
+        \item[signal plus noise]
+
+            \begin{align*}
+                x_t = \delta + x_{t-1} + w_t
+            \end{align*}
+
+    \end{description}
+\end{frame}
+
+\subsection{Measures of dependence}
+
+\begin{comment}
+
+\section{Statistical remarks}
+
+\begin{frame}
+    \frametitle{Working examples}
+
+    \begin{example1}
+
+        We know that the average running speed of control mice is 1~cm/sec. The
+        sample average running speed of a cohort (n=100) of transgenic mice is
+        $\bar{x}=2.7\,\text{cm/sec}$ and the sample standard deviation is
+        $s=10~\text{cm/sec}$. Is the average running speed of mice in the
+        transgenic cohort larger than that of control mice? Test with a
+        confidence level $\alpha=0.01$.
+
+    \end{example1}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Working examples}
+
+    \begin{example2}
+
+        We want to study the effect of a new drug on visual electrophysiology
+        in humans. We know that the mean peak evoked response potential (ERP)
+        over V1 during the first 200~ms after stimuli presentation is 2~mV. The
+        sample mean peak ERP for a group of 50 medicated subjects is
+        $\bar{x}=1.3\,\text{mV}$ and the sample standard deviation is
+        $s=2.6~\text{mV}$. Does taking the new drug change the mean evoked ERP
+        over V1? Provide your test p-value and reject the null hypothesis with
+        a confidence level $\alpha=0.05$.
+
+    \end{example2}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistical remarks}
+
+    \begin{enumerate}
+
+        \item Random data (e.g., observed data) is characterised using
+            probability distributions. For example a:
+
+            \begin{itemize}
+
+                \item Normal distribution with parameters mean $\mu$ and variance
+                    $\sigma^2$, $\mathcal{N}(\mu,\sigma^2)$,
+
+                    \begin{center}
+                        \href{http://www.gatsby.ucl.ac.uk/~rapela/neuroinformatics/2024/htTutorial/figures/gaussians.html}{\includegraphics[width=2in]{figures/gaussians.png}}
+                    \end{center}
+
+                \item Exponential distribution with rate parameter $\lambda$,
+                    $\mathcal{E}(\lambda)$,
+
+                \item Poisson distribution with expected rate parameter $\lambda$,
+                    $\mathcal{P}(\lambda)$,
+
+                \item Binomial distribution with number of observation parameter $n$
+                    and with a success probability parameter $p$,
+                    $\mathcal{B}(n,p)$.
+
+            \end{itemize}
+            \seti
+    \end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistical remarks}
+
+    \begin{enumerate}
+
+        \conti
+
+        \item One branch of statistics, \textbf{estimation theory}, provides
+            tools to estimate parameters of distributions from observations.
+
+        \item Another branch of statistics, \textbf{hypothesis testing},
+            provides tools to make statistically-informed decisions about
+            values of parameters of distributions.
+
+            \seti
+
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistical remarks}
+
+    \begin{enumerate}[<+->]
+
+        \conti
+
+		\item To estimate parameters, or to make decisions about them, we use
+observations, $x_1,\ldots,x_N$, that are \textbf{independent and identically
+distributed}.
+
+            \begin{example1}
+
+				An observation is the average speed of a transgenic mouse
+during an experimental session. We assume that the average speeds of all
+mice are samples from a common probability density function (identically
+distributed) and that average speeds are independent across mice (independent).
+
+            \end{example1}
+
+            \begin{example2}
+
+				An observation is the peak ERP of a medicated cohort
+subject. We assume that these ERPs are samples from the same probability density
+function (identically distributed) and that these ERPs are independent across
+subjects (independent).
+
+            \end{example2}
+
+            \seti
+
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistical remarks}
+
+    \begin{enumerate}
+
+        \conti
+
+		\item A goal of statistics is to \textbf{infer properties of the
+population} (e.g., the effect of the genetic manipulation on the running speed
+of mice) from \textbf{properties of the sample} (e.g., the effect of the
+manipulation on the running speed of the 100 sampled mice).
+
+		\seti
+
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistical remarks}
+
+	\begin{theorem}[Central Limit Theorem]
+        Let $X_1,\ldots,X_n$ be independent and identically distributed random
+        variables with mean $\mu$ and finite variance $\sigma^2$. Let $n$ be
+        large. Then the sample mean
+        \begin{align}
+            \bar{X}=\frac{1}{n}\sum_{i=1}^NX_i\label{eq:sampleMean}
+        \end{align}
+        is distributed as $\bar{X}\sim\mathcal{N}(\mu,\frac{\sigma^2}{n})$.
+	\end{theorem}
+
+    Note: if $\sigma^2$ is unknown, we can estimate $\sigma^2$ with the sample
+    variance $s^2=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2$.  Then, for large
+    $n$, $\bar{X}$ is approximately distributed as
+    $\mathcal{N}(\mu,\frac{s^2}{n})$.
+
+\end{frame}
+
+\section{Hypothesis testing}
+
+\begin{frame}
+\frametitle{Main source}
+
+    Chapter 9 ``Large-sample test of hypothesis'' and chapter 10 ``Inference from
+    small samples'' from 
+
+    \begin{center}
+        \includegraphics[height=2.5in]{figures/mendenhall09-introductionToProbabilityAndStatistics-13edition_cover.pdf}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Null and alternative hypothesis}
+
+    \begin{itemize}
+
+        \item In hypothesis testing we work with a \textbf{null hypothesis},
+            $\mathcal{H}_0$, and an \textbf{alternative hypothesis},
+            $\mathcal{H}_a$, collect a sample of data $x_1,\ldots,x_N$, and
+            test if this data provides sufficient statistical evidence in favour
+            of the alternative hypothesis. If this happens we reject the null
+            hypothesis.
+
+        \item However, if the collected data does not provide sufficient
+            statistical evidence in favour of the alternative hypothesis, we do
+            not accept the null hypothesis, but we say that we failed to reject
+            it.  \textbf{Hypothesis tests do not prove null hypothesis, they
+            only provide statistical evidence to reject it, or fail to reject it.}
+
+    \end{itemize}
+
+	\onslide<2->{
+	\begin{alertblock}
+
+		The hypothesis that we aim to prove should be the alternative one.
+
+	\end{alertblock}
+	}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Null and alternative hypothesis}
+
+    \begin{example1}
+
+        Is the average running speed of the transgenic cohort larger than that of the control cohort (i.e., 2~cm/sec)?
+
+        \begin{description}
+
+            \item[$\mathcal{H}_0$]: the average running speed of the transgenic cohort is 2~cm/sec.
+
+            \item[$\mathcal{H}_a$]: the average running speed of the transgenic cohort is lager than 2~cm/sec.
+
+        \end{description}
+
+    \end{example1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Null and alternative hypothesis}
+
+    \begin{example2}
+
+		Is the mean peak visual ERP in the first 200~ms post stimuli different
+in medicated than in control subjects (i.e., 2~mV)?
+
+        \begin{description}
+
+            \item[$\mathcal{H}_0$]: the mean peak visual ERP in medicated subjects is 2~mV.
+
+            \item[$\mathcal{H}_a$]: the mean peak visual ERP in medicated subjects is different from 2~mV.
+
+        \end{description}
+
+    \end{example2}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{One- and two-tailed tests of hypothesis}
+
+	\begin{description}
+
+		\item[One-tailed test of hypothesis] directionality is suggested by the
+alternative hypothesis. 
+
+			\begin{example1}
+
+				It is a one-tailed hypothesis test because the alternative
+hypothesis requires that the mean speed of the transgenic mice be larger
+(directionality) than that of the control mice.
+
+			\end{example1}
+
+		\onslide<2->{
+		\item[Two-tailed test of hypothesis] directionality is not suggested by
+the alternative hypothesis.
+
+			\begin{example2}
+
+				 It is a two-tailed hypothesis test because the alternative
+hypothesis requires that the visual ERP of the medicated subjects be different
+(no directionality) than that of the control subjects.
+
+			\end{example2}
+		}
+	\end{description}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Test statistic and its sampling distribution}
+
+    \begin{itemize}
+
+        \item To perform a hypothesis test we propose a \textbf{test statistic}, a
+            function of the sample data, like the sample mean in
+            Eq.~\ref{eq:sampleMean}.
+
+        \item Because the sample data is random, the test statistic is also
+            random. To perform hypothesis tests we need to know the
+            distribution of the test statistic, which is called the
+            \textbf{sampling distribution}.
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Test statistic and its sampling distribution for the working
+    examples}
+
+	Because both examples are tests for the population mean, $\mu$, because the
+sample mean, $\bar{x}$, is a good estimator of the population mean, and because
+both examples use a large number of samples, we will use the standardised
+sample mean as our test statistic:
+
+	\begin{align*}
+		Z = \frac{\bar{X}-\mu_0}{s/\sqrt{n}}
+	\end{align*}
+
+	From the central limit theorem, we know the sampling distribution of this
+    test statistic under the null hypothesis:
+
+	\begin{align*}
+		 Z\sim\mathcal{N}(0, 1)
+	\end{align*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Rejection region}
+
+    The \textbf{reject region} is a region of low probability under the null
+    hypothesis, which is consistent with alternative hypothesis. The
+    \textbf{non-reject region}, is a region of large probability under the null
+    hypothesis, that is inconsistent with the alternative hypothesis.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Rejection region}
+
+	\begin{example1}
+
+        We want to reject the null hypothesis that the average running speed of
+        the transgenic mice equals 2~cm/sec if their sample mean speed is much
+        larger than 2~cm/sec.  That is, we want to reject the null hypothesis
+        if $z$ is large and positive. How large is large?
+
+        \vspace{0.1in}
+
+        To answer this question we define the \textbf{Type I error} of a test,
+        as the error of rejecting the null hypothesis when it is valid. We also
+        define the \textbf{significance level of the hypothesis test},
+        $\alpha$, as the probability of Type I error admitted by the test.
+
+        \vspace{0.1in}
+
+        When designing a test we first decide on its significance level
+        $\alpha$.  We then reject the null hypothesis if $z$ is larger than the
+        value $z_\alpha$ that leaves $\alpha$ probability to its right, We call
+        this value the \textbf{critical value} of the test (see figure on next
+        slide).
+
+	\end{example1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Rejection region}
+
+	\begin{example1}
+
+    	\begin{center}
+        	\includegraphics[width=4in]{figures/right_tailed_test.png}
+    	\end{center}
+        \hfill Mendenhall et al., 2009
+
+	\end{example1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Rejection region}
+
+	\begin{example2}
+
+        We want to reject the null hypothesis that the drug has not effect on
+        the average visually evoked ERP if the sample mean visually evoked ERP
+        of medicated subjects is much smaller or much larger than the mean
+        visually evoked ERP of control subjects (2~mV).
+        How small is small and how large is large?
+
+        \vspace{0.1in}
+
+        We will reject the null hypothesis if the standardised mean, $z$, is
+        larger than the value $z_{\alpha/2}$ that leaves $\alpha/2$ probability
+        to its right or smaller than the value $-z_{\alpha/2}$ that leaves
+        $\alpha/2$ probability to its left (see figure on next slide).
+
+	\end{example2}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Rejection region}
+
+	\begin{example1}
+
+    	\begin{center}
+        	\includegraphics[width=4in]{figures/two_tailed_test.png}
+    	\end{center}
+        \hfill Mendenhall et al., 2009
+
+	\end{example1}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Large-sample hypothesis test for the mean}
+
+    \begin{center}
+        \includegraphics[width=3.5in]{figures/large_sample_hypothesis_test.png}
+    \end{center}
+    \hfill \scriptsize{Mendenhall et al., 2009}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Complete hypothesis test for example 1}
+
+    \begin{example1}
+
+        We know that the average running speed of control mice is 1~cm/sec. The
+        sample average running speed of a cohort (n=100) of transgenic mice is
+        $\bar{x}=2.7\,\text{cm/sec}$ and the sample standard deviation is
+        $s=10~\text{cm/sec}$. Is the average running speed of mice in the
+        transgenic cohort larger than that of control mice? Test with a
+        confidence level $\alpha=0.01$.
+
+        Relevant quantities: $\mu_0=1$, $n=100$, $\bar{x}=2.7$, $s=10$,
+        $\alpha=0.01$.
+
+        \begin{enumerate}
+
+            \item identify the null hypothesis $H_0$: \textcolor{cyan}{the average running speed of the transgenic cohort is 2 cm/sec.}
+
+            \item identify the alternative hypothesis $H_a$: \textcolor{cyan}{the average running speed of the transgenic cohort is larger than 2 cm/sec}.
+
+            \item select a test statistic: \textcolor{cyan}{standardised sample mean $Z$}.
+
+            \seti
+
+        \end{enumerate}
+
+	\end{example1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Complete hypothesis test for example 1}
+
+    \begin{example1}
+
+        \begin{enumerate}
+
+            \conti
+
+            \item set the rejection region: \textcolor{cyan}{right-tailed hypothesis test, with critical value $z_{0.01}=2.3263$}.
+
+            \item calculate the observed value of the test statistic.
+
+                \begin{align*}
+                    \color{cyan}
+                    z_\text{obs}=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{2.7-1}{10/\sqrt{100}}=1.7
+                \end{align*}
+
+            \item draw your conclusion: \textcolor{cyan}{$z_\text{obs}=1.7<2.3263=z_{0.01}$. Thus, there is not enough statistical evidence to reject the null hypothesis with a confidence level $\alpha=0.01$.}
+
+        \end{enumerate}
+
+        Would you reject the null hypothesis with  confidence level
+        $\alpha=0.05$?
+
+    \end{example1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{p-value}
+
+    \begin{definition}[p-value]
+
+        The p-value (or observed significance level of a statistical test) is
+        the probability that the test statistic is as extreme or more extreme
+        than the observed test statistic value, when the null hypothesis is
+        true.
+
+    \end{definition}
+
+    \begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \includegraphics[width=2in]{figures/right_sided_pvalue_colored.png}
+            \caption{left-sided test}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \includegraphics[width=2in]{figures/two_sided_pvalue_colored.png}
+            \caption{two-sided test}
+        \end{subfigure}
+        \caption{p-values are the area of the red-coloured regions}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{p-value}
+
+    Notes:
+
+    \begin{itemize}
+
+        \item small p-values indicate that the probability of obtaining a test
+            statistic as extreme or more extreme as the observed test statistic value
+            is small, showing that our data supports the alternative hypothesis.
+
+        \item large p-values show that our data does not support the
+            alternative hypothesis.
+
+        \item if the p-value is smaller than a pre-assigned confidence level
+            $\alpha$, then the null hypothesis can be rejected and you can say
+            that the result is statistically significant at confidence level
+            $\alpha$.
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Complete hypothesis test for example 2}
+
+    \begin{example2}
+        Worksheet problem 1.
+    \end{example2}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Taxonomy of hypothesis tests for the the mean}
+
+    \begin{itemize}
+        \item The previous tests worked well because the sample statistic for
+            the sample mean was approximately normal. This happens when
+
+            \begin{itemize}
+
+                \item samples, of any size, are Gaussian, with known variance.
+
+                \item the number of samples is sufficiently large (e.g.,
+                    $n>30$) and samples are independent and identically
+                    distributed from any distribution with mean $\mu$ and
+                    finite variance $\sigma^2$, known or estimated by the
+                    sample variance $s^2$ (central limit theorem).
+
+            \end{itemize}
+
+        \item What if samples are Gaussian, with unknown variance and we
+            can only collect a small number $n$ of samples?
+
+            Then the sample distribution of the mean follows a student-t
+            distribution with n-1 degrees of freedom.
+
+        \item What if samples are non-Gaussian and we can only collect a small
+            number $n$ of samples?
+
+            Use a resampling method (e.g., bootstrap of permutation test).
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Student-t distribution}
+
+    The Student-t distribution:
+
+    \begin{itemize}
+
+        \item has a similar shape as the standard Normal distribution,
+
+        \item has heavier tails than the standard Normal distribution,
+
+        \item approaches the standard normal distribution as the number of
+            degrees of freedom increase.
+    \end{itemize}
+
+    \begin{center}
+        \href{https://www.gatsby.ucl.ac.uk/~rapela/neuroinformatics/2024/htTutorial/figures/studentTVsgaussians.html}{\includegraphics[width=2.5in]{figures/studentTVsgaussians.png}}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Small-sample hypothesis test for the mean (t-test)}
+
+    \begin{center}
+        \includegraphics[width=2.5in]{figures/small_sample_hypothesis_test.png}
+    \end{center}
+    \hfill \scriptsize{Mendenhall et al., 2009}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Two types of errors}
+
+    \begin{definition}[Type I error]
+
+        The error of rejecting the null hypothesis when it is true is called
+        type I error. The probability of type I error is denoted by the symbol
+        $\alpha$ (Figure~\ref{fig:xBarUnderH0AndHa}).
+
+    \end{definition}
+
+    \begin{definition}[Type II error]
+
+        The error of not rejecting the null hypothesis when the alternative one
+        is true is called type II error. The probability of type II error is
+        denoted by the symbol $\beta$ (Figure~\ref{fig:xBarUnderH0AndHa}).
+
+    \end{definition}
+
+    \begin{definition}[Power of a statistical test]
+
+        The power of a statistical test is the probability of rejecting the
+        null hypothesis when the alternative one is true and it is equal to
+        $1-\beta$.
+
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Calculation of $\beta$}
+
+    \tiny
+    \begin{example1}
+        Calculate $\beta$ for the alternative hypothesis $\mathcal{H}_a:
+        \mu_a=5.0$ (using, as before, $\mathcal{H}_0: \mu_0=1.0$, $\alpha=0.01$,
+        $\bar{x}=2.7$, $s=10$, and $n=100$). See
+        Figure~\ref{fig:xBarUnderH0AndHa}.
+
+        We will first express the rejection region in terms of $\bar{X}$.
+        Before we calculated the rejection region in terms of $Z$ as
+        $Z>z_{\alpha}$ which is
+
+        \begin{align*}
+            z_\alpha<Z=\frac{\bar{X}-\mu_0}{s/\sqrt{n}}
+        \end{align*}
+
+        Then the rejection region in therms of $\bar{X}$ is
+
+        \begin{align*}
+            \bar{X}>\mu_0+z_\alpha\,s/\sqrt{n}
+        \end{align*}
+
+        Now
+
+        \begin{align*}
+            \beta&=P(\text{not reject}\ \mathcal{H}_0|\mathcal{H}_a\ \text{is
+            true})=P(\bar{X}<\mu_0+z_\alpha\,s/\sqrt{n}|\mu=\mu_a)=P(\frac{\bar{X}-\mu_a}{s/\sqrt{n}}<\frac{\mu_0-\mu_a}{s/\sqrt{n}}+z_\alpha|\mu=\mu_a)\\
+                 &=P(Z<\frac{\mu_0-\mu_a}{s/\sqrt{n}}+z_\alpha)=P(Z<\frac{1.0-2.0}{10/\sqrt{100}}+2.326)=P(Z<-1.6736)=0.047
+        \end{align*}
+
+    \end{example1}
+
+    The worksheet contains an optional exercise illustrating how to find the
+    minimum sample size $n$ to achieve a given probability of type I error
+    $\alpha$ and probability of type II error $\beta$ for a given effect size.
+
+    \normalsize
+\end{frame}
+
+\begin{frame}
+    \frametitle{Calculation of $\beta$}
+    \begin{center}
+        \begin{figure}
+            \includegraphics[width=3in]{figures/xBarUnderH0AndHa_colored.png}
+
+             \caption{Probabilities of type I and type II errors ($\alpha$ and
+             $\beta$, respectively) for the example in the previous page.}
+             \label{fig:xBarUnderH0AndHa}
+
+        \end{figure}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Lecture notes and worksheet}
+
+    They can both be found in the class repository at
+    \href{https://github.com/joacorapela/neuroinformatics24}{https://github.com/joacorapela/neuroinformatics24}
+
+    The lecture notes appear
+    \href{https://github.com/joacorapela/neuroinformatics24/blob/master/practicals/01\_tTestAndRandomizationTests/introAndHipothesisTests.pdf}{here}
+    and the worksheets appear
+    \href{https://github.com/joacorapela/neuroinformatics24/blob/master/worsheets/01\_tTestAndRandomizationTests/worksheet\_tTestAndRandomizationTests.pdf}{here}.
+
+\end{frame}
+
+\end{comment}
+
+
+\begin{frame}
+    \frametitle{Summary}
+
+\end{frame}
+
+\bibliographystyle{apalike}
+\bibliography{others}
+
+\end{document}
