@@ -1,4 +1,0 @@
-Temporal Time Series Analysis
-=============================
-
-
