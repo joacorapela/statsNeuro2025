@@ -85,6 +85,7 @@
 \usepackage{natbib}
 \usepackage{apalike}
 \usepackage{comment}
+\usepackage{listings,lstautogobble}
 % \usepackage{enumitem}
 % \setlist[itemize]{topsep=0pt,before=\leavevmode\vspace{-1.5em}}
 % \setlist[description]{style=nextline}
@@ -300,29 +301,38 @@ Gatsby Computational Neuroscience Unit\\University College London % Your institu
 
 \end{frame}
 
-\begin{frame}
-    \frametitle{Generation of time series}
+\begin{frame}[fragile]
+    \frametitle{Generation of time series: white noise}
 
-    \begin{description}
+    The first step to generate time series is to generate \textbf{white noise}
+    (i.e., independent Gaussian random variables with zero mean and fixed
+    variance).
 
-        \item[generate white noise] the first step to generate time series is
-            to generate \textbf{white noise} (i.e., independent Gaussian random
-            variables with zero mean and fixed variance).
+    \begin{lstlisting}[language=Python,basicstyle=\small]
+        w = np.random.normal(loc=0, scale=sigma, size=N)
+    \end{lstlisting}
 
-            \begin{lstlisting}
-                white_noise = np.random.normal(loc=0, scale=sigma, size=N)
-            \end{lstlisting}
+    \href{}{Example}
 
-            \href{}{Example}
+    \begin{center}
+        \href{}{\includegraphics[width=3in]{../../examples/01_temporalTimeSeriesAnalysis/figures/whiteNoise.png}}
+    \end{center}
 
-            \hreff{}{\includegraphics[width=2in]{../../examples/01_temporalTimeSeriesAnalysis/figures/whiteNoise.png}}
+\end{frame}
 
-        \item[moving average models]
+\begin{frame}[fragile]
+    \frametitle{Generation of time series: moving average model}
 
             \begin{align*}
                 \nu_t = \frac{1}{3}(w_{t-1} + w_t + w_{t+1})
             \end{align*}
 
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Generation of time series: autoregressive model}
+
+    \begin{description}
         \item[autoregressive models]
 
             \begin{align*}
