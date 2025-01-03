@@ -15,10 +15,9 @@ import plotly.graph_objects as go
 # Define variables
 # -----------------
 
-srate = 500
-T = 2 # sec
+srate = 1
+T = 500
 sigma = 1.0
-xlim = [0.9, 1.0]
 
 #%%
 # Create white noise
@@ -47,9 +46,7 @@ ma[-1] = (w[-2] + w[-1]) / 3
 fig = go.Figure()
 trace = go.Scatter(x=time, y=ma, mode="lines+markers")
 fig.add_trace(trace)
-fig.update_layout(xaxis=dict(title="Time (sec)", range=xlim),
-                  yaxis=dict(title="x"),
-                 )
+fig.update_layout(xaxis=dict(title="Time (sec)"), yaxis=dict(title="x"))
 
 if not os.path.exists("figures"):
     os.mkdir("figures")

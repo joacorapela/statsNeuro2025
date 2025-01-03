@@ -15,11 +15,10 @@ import plotly.graph_objects as go
 # Define variables
 # ----------------
 
-srate = 500
-T = 2 # sec
+srate = 1
+T = 200 # sec
 sigma = 1.0
 delta = .2
-xlim = [0.9, 1.0]
 
 #%%
 # Create white noise
@@ -38,7 +37,7 @@ w = np.random.normal(loc=0, scale=sigma, size=N)
 rwWithDrift = np.empty(N, dtype=np.double)
 rwWithDrift[0] = delta + w[0]
 for i in range(1, N):
-    rwWithDrift[i] = delta + - delta * rwWithDrift[i-1] + w[i]
+    rwWithDrift[i] = delta + rwWithDrift[i-1] + w[i]
 
 #%%
 # Plot random noise with noise time series
@@ -46,12 +45,13 @@ for i in range(1, N):
 #
 
 fig = go.Figure()
-trace = go.Scatter(x=time, y=rwWithDrift, mode="lines+markers")
+trace = go.Scatter(x=time, y=rwWithDrift, mode="lines+markers",
+                   showlegend=False)
 fig.add_trace(trace)
-trace = go.Scatter(x=[0, 2], y=[0, delta*2], line=dict(dash="dot"), mode="lines+markers")
+trace = go.Scatter(x=[0, T], y=[0, delta*T], line=dict(dash="dot"),
+                   mode="lines", showlegend=False)
 fig.add_trace(trace)
-fig.update_layout(xaxis=dict(title="Time (sec)", range=xlim),
-                  yaxis=dict(title="x"))
+fig.update_layout(xaxis=dict(title="Time (sec)"), yaxis=dict(title="x"))
 
 if not os.path.exists("figures"):
     os.mkdir("figures")
