@@ -3,6 +3,7 @@ Generation of a random walk with drift time series
 ==================================================
 """
 
+
 #%%
 # Import requirements
 # -------------------
