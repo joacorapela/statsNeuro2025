@@ -70,4 +70,4 @@ if not os.path.exists("figures"):
 fig.write_html("figures/autoregressive.html")
 fig.write_image("figures/autoregressive.png")
 
-fig.show()
+fig
