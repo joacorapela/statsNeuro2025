@@ -18,6 +18,7 @@ import plotly.graph_objects as go
 srate = 500
 T = 2 # sec
 sigma = 1.0
+xlim = [0.9, 1.0]
 
 #%%
 # Create white noise
@@ -26,7 +27,7 @@ sigma = 1.0
 
 time = np.arange(0, T, 1.0/srate)
 N = len(time)
-white_noise = np.random.normal(loc=0, scale=sigma, size=N)
+w = np.random.normal(loc=0, scale=sigma, size=N)
 
 #%%
 # Plot white noise
@@ -34,9 +35,11 @@ white_noise = np.random.normal(loc=0, scale=sigma, size=N)
 #
 
 fig = go.Figure()
-trace = go.Scatter(x=time, y=white_noise, mode="lines+markers")
+trace = go.Scatter(x=time, y=w, mode="lines+markers")
 fig.add_trace(trace)
-fig.update_layout(xaxis_title="Time(sec)", yaxis_title="w")
+fig.update_layout(xaxis=dict(title="Time (sec)", range=xlim),
+                  yaxis=dict(title="x"),
+                 )
 
 if not os.path.exists("figures"):
     os.mkdir("figures")
