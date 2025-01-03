@@ -67,7 +67,7 @@ fig.update_layout(xaxis=dict(title="Time (sec)"), yaxis=dict(title="x"))
 if not os.path.exists("figures"):
     os.mkdir("figures")
 
-fig.write_html("figures/autoregressive.html")
-fig.write_image("figures/autoregressive.png")
+fig.write_html("figures/randomWalkWithDrift.html")
+fig.write_image("figures/randomWalkWithDrift.png")
 
 fig
