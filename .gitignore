@@ -23,6 +23,7 @@ sounds/
 mySolution/
 doc/sphinx/*
 !doc/sphinx/requirements.txt
+!doc/sphinx/source/
 doc/sphinx/source/*
 !doc/sphinx/source/conf.py
 !doc/sphinx/source/index.rst
