@@ -48,7 +48,7 @@ for i in range(1, N):
 fig = go.Figure()
 trace = go.Scatter(x=time, y=rwWithDrift, mode="lines+markers")
 fig.add_trace(trace)
-trace = go.Scatter(x=[0, 2], y=[0, delta*2], dash="dash", mode="lines+markers")
+trace = go.Scatter(x=[0, 2], y=[0, delta*2], line=dict(dash="dot"), mode="lines+markers")
 fig.add_trace(trace)
 fig.update_layout(xaxis=dict(title="Time (sec)", range=xlim),
                   yaxis=dict(title="x"))
