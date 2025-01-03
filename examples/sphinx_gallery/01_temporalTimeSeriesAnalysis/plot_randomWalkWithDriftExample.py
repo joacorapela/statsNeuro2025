@@ -45,7 +45,7 @@ for i in range(1, N):
     rwWithDrift1[i] = delta1 + rwWithDrift1[i-1] + w1[i]
 
 #%%
-# Plot random noise with noise time series
+# Plot random noise with drift time series
 # ----------------------------------------
 #
 
