@@ -10,7 +10,7 @@ Welcome to statsNeuro2025's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   auto_examples/index
 
 Indices and tables
 ==================
