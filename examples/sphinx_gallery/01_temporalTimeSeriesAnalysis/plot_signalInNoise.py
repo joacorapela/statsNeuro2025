@@ -1,6 +1,6 @@
 """
-Generation of a random walk with drift time series
-==================================================
+Generation of a signal in noise time series
+===========================================
 """
 
 #%%
