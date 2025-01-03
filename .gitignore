@@ -9,6 +9,7 @@
 *.bak
 *.bbl
 *.blg
+*.vrb
 .nfs*
 
 __pycache__/
@@ -20,7 +21,7 @@ results/
 notes/
 sounds/
 mySolution/
-docs/sphinx/
-docs/sphinx/source/*
-!docs/sphinx/source/conf.py
-!docs/sphinx/source/index.rst
+doc/sphinx/
+doc/sphinx/source/*
+!doc/sphinx/source/conf.py
+!doc/sphinx/source/index.rst
