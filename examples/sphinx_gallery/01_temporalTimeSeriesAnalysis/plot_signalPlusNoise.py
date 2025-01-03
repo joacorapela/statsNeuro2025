@@ -1,6 +1,6 @@
 """
-Generation of a signal in noise time series
-===========================================
+Generation of a signal plus noise time series
+=============================================
 """
 
 #%%
@@ -35,8 +35,8 @@ w_low = np.random.normal(loc=0, scale=sigma_low, size=N)
 w_high = np.random.normal(loc=0, scale=sigma_high, size=N)
 
 #%%
-# Create signal in noise time series
-# ----------------------------------
+# Create signal plus noise time series
+# ------------------------------------
 #
 
 signal = A*np.cos(2*np.pi*omega*time+phi)
@@ -44,8 +44,8 @@ signalInNoise_low = signal + w_low
 signalInNoise_high = signal + w_high
 
 #%%
-# Plot random noise with noise time series
-# ----------------------------------------
+# Plot signal plus noise time series
+# ----------------------------------
 #
 
 fig = plotly.subplots.make_subplots(
